@@ -19,6 +19,9 @@ function App() {
           // destructure data from each person
           const { id, image, name, title, quote } = person;
           let position = 'nextSlide';
+          if (personIndex === index) {
+            position = 'activeSlide';
+          }
           return (
             <article className={position} key={id}>
               <img src={image} alt="name" className="person-img" />
