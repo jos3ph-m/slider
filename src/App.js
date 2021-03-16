@@ -7,6 +7,9 @@ function App() {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+  }, [index, people]);
   return (
     <section className="section">
       <div className="title">
