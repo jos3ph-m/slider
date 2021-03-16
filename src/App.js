@@ -12,6 +12,9 @@ function App() {
     if (index < 0) {
       setIndex(lastIndex);
     }
+    if (index >= people.length) {
+      setIndex(0);
+    }
   }, [index, people]);
   return (
     <section className="section">
