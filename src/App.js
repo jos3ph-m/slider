@@ -12,7 +12,7 @@ function App() {
     if (index < 0) {
       setIndex(lastIndex);
     }
-    if (index >= people.length) {
+    if (index > lastIndex) {
       setIndex(0);
     }
   }, [index, people]);
